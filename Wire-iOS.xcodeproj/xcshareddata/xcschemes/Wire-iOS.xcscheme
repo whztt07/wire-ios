@@ -40,6 +40,16 @@
                ReferencedContainer = "container:Wire-iOS.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "5EC3A4A2210F3D9D00B76C78"
+               BuildableName = "IntentsKitTests.xctest"
+               BlueprintName = "IntentsKitTests"
+               ReferencedContainer = "container:Wire-iOS.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

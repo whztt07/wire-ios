@@ -16,16 +16,14 @@
 // along with this program. If not, see http://www.gnu.org/licenses/.
 //
 
-import Intents
-import IntentsKit
+#import <UIKit/UIKit.h>
 
-class IntentHandler: INExtension {
+//! Project version number for IntentsKit.
+FOUNDATION_EXPORT double IntentsKitVersionNumber;
 
-    let manager = IntentsManager()
-    
-    override func handler(for intent: INIntent) -> Any {
-        return manager.requestHandler(for: intent)
-    }
-    
-}
+//! Project version string for IntentsKit.
+FOUNDATION_EXPORT const unsigned char IntentsKitVersionString[];
+
+// In this header, you should import all the public headers of your framework using statements like #import <IntentsKit/PublicHeader.h>
+
 
