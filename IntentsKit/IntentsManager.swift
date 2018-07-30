@@ -21,15 +21,26 @@ import WireDataModel
 import WireShareEngine
 import Intents
 
+/**
+ * The object that handles responding to intents.
+ */
+
 public class IntentsManager {
 
-    public init() {
-
-    }
+    /// Creates a new intents manager.
+    public init() {}
 
     deinit {
         StorageStack.reset()
     }
+
+    // MARK: - Starting the flow
+
+    /**
+     * Returns the appropriate handler object for the specified intent.
+     *
+     * The intent must be of a known type. If the type is unknown, the app will crash.
+     */
 
     public func requestHandler(for intent: INIntent) -> Any {
         let sharingSession = createSharingSession()
@@ -43,6 +54,7 @@ public class IntentsManager {
 
     // MARK: - Session
 
+    /// Creates the sharing session to use for sending information.
     private func createSharingSession() -> SharingSession? {
         guard let applicationGroupIdentifier = applicationGroupIdentifier,
             let hostBundleIdentifier = hostBundleIdentifier,
