@@ -4,6 +4,8 @@
 <dict>
 	<key>ApplicationGroupIdentifier</key>
 	<string>group.${WIRE_BUNDLE_ID}</string>
+	<key>WireGroupId</key>
+	<string>${WIRE_BUNDLE_ID}</string>
 	<key>HostBundleIdentifier</key>
 	<string>$(WIRE_BUNDLE_ID)</string>
 	<key>CFBundleDevelopmentRegion</key>

@@ -1273,6 +1273,90 @@
 			remoteGlobalIDString = 5EC3A49A210F3D9D00B76C78;
 			remoteInfo = IntentsKit;
 		};
+		5EC3A4DB210F5B3C00B76C78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5EC3A4D5210F5B3B00B76C78 /* WireDataModel.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F9C9A4FC1CAD5DF10039E10C;
+			remoteInfo = WireDataModel;
+		};
+		5EC3A4DD210F5B3C00B76C78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5EC3A4D5210F5B3B00B76C78 /* WireDataModel.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F9C9A5061CAD5DF10039E10C;
+			remoteInfo = WireDataModelTests;
+		};
+		5EC3A4DF210F5B3C00B76C78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5EC3A4D5210F5B3B00B76C78 /* WireDataModel.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F9C9A7F31CAED9510039E10C;
+			remoteInfo = WireDataModelTestHost;
+		};
+		5EC3A4E7210F5FFD00B76C78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5EC3A4E1210F5FFD00B76C78 /* WireShareEngine.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5470D3E81D76E1B000FDE440;
+			remoteInfo = WireShareEngine;
+		};
+		5EC3A4E9210F5FFD00B76C78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5EC3A4E1210F5FFD00B76C78 /* WireShareEngine.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5470D3F21D76E1B000FDE440;
+			remoteInfo = WireShareEngineTests;
+		};
+		5EC3A4EB210F5FFD00B76C78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5EC3A4E1210F5FFD00B76C78 /* WireShareEngine.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F154EE081F44826400CB8184;
+			remoteInfo = WireShareEngineTestHost;
+		};
+		5EC3A4ED210F600900B76C78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5EC3A4E1210F5FFD00B76C78 /* WireShareEngine.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 5470D3E71D76E1B000FDE440;
+			remoteInfo = WireShareEngine;
+		};
+		5EC3A4EF210F600900B76C78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5EC3A4D5210F5B3B00B76C78 /* WireDataModel.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F9C9A4FB1CAD5DF10039E10C;
+			remoteInfo = WireDataModel;
+		};
+		5EC3A4F7210F607F00B76C78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5EC3A4F1210F607F00B76C78 /* WireRequestStrategy.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1669016A1D707509000FE4AF;
+			remoteInfo = WireRequestStrategy;
+		};
+		5EC3A4F9210F607F00B76C78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5EC3A4F1210F607F00B76C78 /* WireRequestStrategy.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 166901741D707509000FE4AF;
+			remoteInfo = WireRequestStrategyTests;
+		};
+		5EC3A4FB210F607F00B76C78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5EC3A4F1210F607F00B76C78 /* WireRequestStrategy.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F154EDC41F447B6C00CB8184;
+			remoteInfo = WireRequestStrategyTestHost;
+		};
+		5EC3A4FD210F608900B76C78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5EC3A4F1210F607F00B76C78 /* WireRequestStrategy.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 166901691D707509000FE4AF;
+			remoteInfo = WireRequestStrategy;
+		};
 		87B7DAB31E696F5D005F5140 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8F42C530199244A700288E4D /* Project object */;
@@ -1627,6 +1711,9 @@
 		5EC3A4B9210F3DC100B76C78 /* IntentsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentsManager.swift; sourceTree = "<group>"; };
 		5EC3A4BB210F3FF900B76C78 /* SendMessageIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendMessageIntentHandler.swift; sourceTree = "<group>"; };
 		5EC3A4BF210F4ADE00B76C78 /* WireIntents.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WireIntents.entitlements; sourceTree = "<group>"; };
+		5EC3A4D5210F5B3B00B76C78 /* WireDataModel.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = WireDataModel.xcodeproj; path = "../wire-ios-data-model/WireDataModel.xcodeproj"; sourceTree = "<group>"; };
+		5EC3A4E1210F5FFD00B76C78 /* WireShareEngine.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = WireShareEngine.xcodeproj; path = "../wire-ios-share-engine/WireShareEngine.xcodeproj"; sourceTree = "<group>"; };
+		5EC3A4F1210F607F00B76C78 /* WireRequestStrategy.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = WireRequestStrategy.xcodeproj; path = "../wire-ios-request-strategy/WireRequestStrategy.xcodeproj"; sourceTree = "<group>"; };
 		5ED26CCD20E7A53A00EB9ED4 /* VerticalColumnPositioning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalColumnPositioning.swift; sourceTree = "<group>"; };
 		5ED26CD120E7CC5900EB9ED4 /* VerticalColumnPositioningContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalColumnPositioningContext.swift; sourceTree = "<group>"; };
 		5EE115E0204EEC7D002AD6C2 /* CallQualityControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallQualityControllerTests.swift; sourceTree = "<group>"; };
@@ -3573,6 +3660,36 @@
 			path = IntentsKit;
 			sourceTree = "<group>";
 		};
+		5EC3A4D6210F5B3B00B76C78 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5EC3A4DC210F5B3C00B76C78 /* WireDataModel.framework */,
+				5EC3A4DE210F5B3C00B76C78 /* WireDataModelTests.xctest */,
+				5EC3A4E0210F5B3C00B76C78 /* WireDataModelTestHost.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5EC3A4E2210F5FFD00B76C78 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5EC3A4E8210F5FFD00B76C78 /* WireShareEngine.framework */,
+				5EC3A4EA210F5FFD00B76C78 /* WireShareEngineTests.xctest */,
+				5EC3A4EC210F5FFD00B76C78 /* WireShareEngineTestHost.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5EC3A4F2210F607F00B76C78 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5EC3A4F8210F607F00B76C78 /* WireRequestStrategy.framework */,
+				5EC3A4FA210F607F00B76C78 /* WireRequestStrategyTests.xctest */,
+				5EC3A4FC210F607F00B76C78 /* WireRequestStrategyTestHost.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		5EE51CBB2099B8E0008BA4B1 /* Thumbnail */ = {
 			isa = PBXGroup;
 			children = (
@@ -4495,6 +4612,9 @@
 		8F42C52F199244A700288E4D = {
 			isa = PBXGroup;
 			children = (
+				5EC3A4F1210F607F00B76C78 /* WireRequestStrategy.xcodeproj */,
+				5EC3A4E1210F5FFD00B76C78 /* WireShareEngine.xcodeproj */,
+				5EC3A4D5210F5B3B00B76C78 /* WireDataModel.xcodeproj */,
 				87C8D7FB1BA8261C00B0530B /* Entitlements-Dev.entitlements */,
 				87C8D7FC1BA8261C00B0530B /* Entitlements-Prod.entitlements */,
 				8FC85543199246EF0008B66B /* ConfigurationSets */,
@@ -6011,6 +6131,9 @@
 			buildRules = (
 			);
 			dependencies = (
+				5EC3A4FE210F608900B76C78 /* PBXTargetDependency */,
+				5EC3A4EE210F600900B76C78 /* PBXTargetDependency */,
+				5EC3A4F0210F600900B76C78 /* PBXTargetDependency */,
 				5EC3A4BE210F423900B76C78 /* PBXTargetDependency */,
 			);
 			name = WireIntents;
@@ -6235,6 +6358,20 @@
 			mainGroup = 8F42C52F199244A700288E4D;
 			productRefGroup = 8F42C539199244A700288E4D /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 5EC3A4D6210F5B3B00B76C78 /* Products */;
+					ProjectRef = 5EC3A4D5210F5B3B00B76C78 /* WireDataModel.xcodeproj */;
+				},
+				{
+					ProductGroup = 5EC3A4F2210F607F00B76C78 /* Products */;
+					ProjectRef = 5EC3A4F1210F607F00B76C78 /* WireRequestStrategy.xcodeproj */;
+				},
+				{
+					ProductGroup = 5EC3A4E2210F5FFD00B76C78 /* Products */;
+					ProjectRef = 5EC3A4E1210F5FFD00B76C78 /* WireShareEngine.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				8F42C537199244A700288E4D /* Wire-iOS */,
@@ -6248,6 +6385,72 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		5EC3A4DC210F5B3C00B76C78 /* WireDataModel.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = WireDataModel.framework;
+			remoteRef = 5EC3A4DB210F5B3C00B76C78 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5EC3A4DE210F5B3C00B76C78 /* WireDataModelTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = WireDataModelTests.xctest;
+			remoteRef = 5EC3A4DD210F5B3C00B76C78 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5EC3A4E0210F5B3C00B76C78 /* WireDataModelTestHost.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = WireDataModelTestHost.app;
+			remoteRef = 5EC3A4DF210F5B3C00B76C78 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5EC3A4E8210F5FFD00B76C78 /* WireShareEngine.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = WireShareEngine.framework;
+			remoteRef = 5EC3A4E7210F5FFD00B76C78 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5EC3A4EA210F5FFD00B76C78 /* WireShareEngineTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = WireShareEngineTests.xctest;
+			remoteRef = 5EC3A4E9210F5FFD00B76C78 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5EC3A4EC210F5FFD00B76C78 /* WireShareEngineTestHost.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = WireShareEngineTestHost.app;
+			remoteRef = 5EC3A4EB210F5FFD00B76C78 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5EC3A4F8210F607F00B76C78 /* WireRequestStrategy.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = WireRequestStrategy.framework;
+			remoteRef = 5EC3A4F7210F607F00B76C78 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5EC3A4FA210F607F00B76C78 /* WireRequestStrategyTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = WireRequestStrategyTests.xctest;
+			remoteRef = 5EC3A4F9210F607F00B76C78 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5EC3A4FC210F607F00B76C78 /* WireRequestStrategyTestHost.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = WireRequestStrategyTestHost.app;
+			remoteRef = 5EC3A4FB210F607F00B76C78 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		168A16A71D9597C2005CFA6C /* Resources */ = {
@@ -6453,17 +6656,17 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/WireSyncEngine.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/WireDataModel.framework",
+				"$(BUILT_PRODUCTS_DIR)/WireDataModel.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/WireSystem.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/WireUtilities.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/WireTransport.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/WireImages.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/WireCryptobox.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/WireProtos.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/WireRequestStrategy.framework",
+				"$(BUILT_PRODUCTS_DIR)/WireRequestStrategy.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/WireCanvas.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/WireLinkPreview.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/WireShareEngine.framework",
+				"$(BUILT_PRODUCTS_DIR)/WireShareEngine.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Ziphy.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Classy.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/ProtocolBuffers.framework",
@@ -7676,6 +7879,21 @@
 			isa = PBXTargetDependency;
 			target = 5EC3A49A210F3D9D00B76C78 /* IntentsKit */;
 			targetProxy = 5EC3A4BD210F423900B76C78 /* PBXContainerItemProxy */;
+		};
+		5EC3A4EE210F600900B76C78 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WireShareEngine;
+			targetProxy = 5EC3A4ED210F600900B76C78 /* PBXContainerItemProxy */;
+		};
+		5EC3A4F0210F600900B76C78 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WireDataModel;
+			targetProxy = 5EC3A4EF210F600900B76C78 /* PBXContainerItemProxy */;
+		};
+		5EC3A4FE210F608900B76C78 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WireRequestStrategy;
+			targetProxy = 5EC3A4FD210F608900B76C78 /* PBXContainerItemProxy */;
 		};
 		87B7DAB41E696F5D005F5140 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;

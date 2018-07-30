@@ -27,6 +27,19 @@ public class SendMessageIntentHandler: NSObject, INSendMessageIntentHandling {
     init(sharingSession: SharingSession?) {
         self.sharingSession = sharingSession
     }
+    public func resolveGroupName(for intent: INSendMessageIntent, with completion: @escaping (INStringResolutionResult) -> Void) {
+        
+    }
+
+    @available(iOS 11, *)
+    public func resolveRecipients(for intent: INSendMessageIntent, with completion: @escaping ([INSendMessageRecipientResolutionResult]) -> Void) {
+
+    }
+
+    @available(iOS 11, *)
+    public func resolveSpeakableGroupName(for intent: INSendMessageIntent, with completion: @escaping (INSpeakableStringResolutionResult) -> Void) {
+
+    }
 
     // Implement resolution methods to provide additional information about your intent (optional).
     public func resolveRecipients(for intent: INSendMessageIntent, with completion: @escaping ([INPersonResolutionResult]) -> Void) {
