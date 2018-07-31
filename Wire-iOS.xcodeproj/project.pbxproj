@@ -1273,6 +1273,27 @@
 			remoteGlobalIDString = F9C9A4FB1CAD5DF10039E10C;
 			remoteInfo = WireDataModel;
 		};
+		5E9583662110A77200265D9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5EC3A4F1210F607F00B76C78 /* WireRequestStrategy.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 166901691D707509000FE4AF;
+			remoteInfo = WireRequestStrategy;
+		};
+		5E9583682110A77200265D9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5EC3A4E1210F5FFD00B76C78 /* WireShareEngine.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 5470D3E71D76E1B000FDE440;
+			remoteInfo = WireShareEngine;
+		};
+		5E95836A2110A77200265D9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5EC3A4D5210F5B3B00B76C78 /* WireDataModel.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F9C9A4FB1CAD5DF10039E10C;
+			remoteInfo = WireDataModel;
+		};
 		5EC3A473210F2F9400B76C78 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8F42C530199244A700288E4D /* Project object */;
@@ -6177,6 +6198,9 @@
 			buildRules = (
 			);
 			dependencies = (
+				5E9583672110A77200265D9B /* PBXTargetDependency */,
+				5E9583692110A77200265D9B /* PBXTargetDependency */,
+				5E95836B2110A77200265D9B /* PBXTargetDependency */,
 			);
 			name = IntentsKit;
 			productName = IntentsKit;
@@ -6332,6 +6356,9 @@
 						SystemCapabilities = {
 							com.apple.SafariKeychain = {
 								enabled = 1;
+							};
+							com.apple.Siri = {
+								enabled = 0;
 							};
 							com.apple.iCloud = {
 								enabled = 1;
@@ -7903,6 +7930,21 @@
 			isa = PBXTargetDependency;
 			name = WireDataModel;
 			targetProxy = 5E95835E2110A56F00265D9B /* PBXContainerItemProxy */;
+		};
+		5E9583672110A77200265D9B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WireRequestStrategy;
+			targetProxy = 5E9583662110A77200265D9B /* PBXContainerItemProxy */;
+		};
+		5E9583692110A77200265D9B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WireShareEngine;
+			targetProxy = 5E9583682110A77200265D9B /* PBXContainerItemProxy */;
+		};
+		5E95836B2110A77200265D9B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WireDataModel;
+			targetProxy = 5E95836A2110A77200265D9B /* PBXContainerItemProxy */;
 		};
 		5EC3A474210F2F9400B76C78 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
