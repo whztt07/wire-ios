@@ -75,7 +75,7 @@ public class IntentsManager {
     }
 
     private var currentAccount: Account? {
-        return accountManager?.selectedAccount
+        return accountManager?.accounts.first
     }
 
     private var applicationGroupIdentifier: String? {

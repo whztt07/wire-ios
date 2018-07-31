@@ -23,22 +23,28 @@ import WireShareEngine
 public class SendMessageIntentHandler: NSObject, INSendMessageIntentHandling {
 
     let sharingSession: SharingSession?
+    let contactLookup: ContactLookup?
+
+    var resolvedConversation: Conversation?
+    var resolvedContent: String?
 
     init(sharingSession: SharingSession?) {
         self.sharingSession = sharingSession
+        self.contactLookup = sharingSession.flatMap(ContactLookup.init)
     }
-    public func resolveGroupName(for intent: INSendMessageIntent, with completion: @escaping (INStringResolutionResult) -> Void) {
-        
-    }
+
+    // MARK: - Contact Resolution
 
     @available(iOS 11, *)
     public func resolveRecipients(for intent: INSendMessageIntent, with completion: @escaping ([INSendMessageRecipientResolutionResult]) -> Void) {
+        guard let contactLookup = self.contactLookup else {
+            completion([])
+            return
+        }
 
-    }
-
-    @available(iOS 11, *)
-    public func resolveSpeakableGroupName(for intent: INSendMessageIntent, with completion: @escaping (INSpeakableStringResolutionResult) -> Void) {
-
+        if let groupName = intent.groupName {
+            _ = contactLookup.findContact(named: groupName)
+        }
     }
 
     // Implement resolution methods to provide additional information about your intent (optional).
@@ -49,10 +55,45 @@ public class SendMessageIntentHandler: NSObject, INSendMessageIntentHandling {
         }
 
         guard let sharingSession = self.sharingSession else {
-            let response = recipients.map(INPersonResolutionResult.success)
-            completion(response)
+            completion([INPersonResolutionResult.notRequired()])
             return
         }
+
+        let contacts: [INPerson] = sharingSession.writeableNonArchivedConversations.map {
+
+            if #available(iOS 10.2, *) {
+                let handle = INPersonHandle(value: $0.name, type: INPersonHandleType.unknown, label: INPersonHandleLabel.work)
+                return INPerson(personHandle: handle, nameComponents: nil, displayName: $0.name, image: nil, contactIdentifier: nil, customIdentifier: nil)
+            } else {
+                return INPerson(handle: $0.name, nameComponents: nil, displayName: $0.name, image: nil, contactIdentifier: nil)
+            }
+
+        }
+
+        var resolutionResults = [INPersonResolutionResult.disambiguation(with: contacts)]
+
+        /*for recipient in recipients {
+         let matchingContacts = [recipient] // Implement your contact matching logic here to create an array of matching contacts
+         switch matchingContacts.count {
+         case 2  ... Int.max:
+         // We need Siri's help to ask user to pick one from the matches.
+         resolutionResults += [INPersonResolutionResult.disambiguation(with: matchingContacts)]
+
+         case 1:
+         // We have exactly one matching contact
+         resolutionResults += [INPersonResolutionResult.success(with: recipient)]
+
+         case 0:
+         // We have no contacts matching the description provided
+         resolutionResults += [INPersonResolutionResult.unsupported()]
+
+         default:
+         break
+
+         }
+         }*/
+        completion(resolutionResults)
+
 
         if let recipients = intent.recipients {
 
@@ -62,43 +103,8 @@ public class SendMessageIntentHandler: NSObject, INSendMessageIntentHandling {
                 return
             }
 
-            let contacts: [INPerson] = sharingSession.writeableNonArchivedConversations.map {
-
-                if #available(iOS 10.2, *) {
-                    let handle = INPersonHandle(value: $0.name, type: INPersonHandleType.unknown, label: INPersonHandleLabel.work)
-                    return INPerson(personHandle: handle, nameComponents: nil, displayName: $0.name, image: nil, contactIdentifier: nil, customIdentifier: nil)
-                } else {
-                    return INPerson(handle: $0.name, nameComponents: nil, displayName: $0.name, image: nil, contactIdentifier: nil)
-                }
-
-            }
-
-            var resolutionResults = [INPersonResolutionResult.disambiguation(with: contacts)]
-
-            /*for recipient in recipients {
-                let matchingContacts = [recipient] // Implement your contact matching logic here to create an array of matching contacts
-                switch matchingContacts.count {
-                case 2  ... Int.max:
-                    // We need Siri's help to ask user to pick one from the matches.
-                    resolutionResults += [INPersonResolutionResult.disambiguation(with: matchingContacts)]
-
-                case 1:
-                    // We have exactly one matching contact
-                    resolutionResults += [INPersonResolutionResult.success(with: recipient)]
-
-                case 0:
-                    // We have no contacts matching the description provided
-                    resolutionResults += [INPersonResolutionResult.unsupported()]
-
-                default:
-                    break
-
-                }
-            }*/
-            completion(resolutionResults)
         }
     }
-
 
     /**
      * Verifies that the message contains text.
@@ -106,6 +112,7 @@ public class SendMessageIntentHandler: NSObject, INSendMessageIntentHandling {
 
     public func resolveContent(for intent: INSendMessageIntent, with completion: @escaping (INStringResolutionResult) -> Void) {
         if let text = intent.content, !text.isEmpty {
+            self.resolvedContent = text
             completion(INStringResolutionResult.success(with: text))
         } else {
             completion(INStringResolutionResult.needsValue())
@@ -116,7 +123,8 @@ public class SendMessageIntentHandler: NSObject, INSendMessageIntentHandling {
 
     public func confirm(intent: INSendMessageIntent, completion: @escaping (INSendMessageIntentResponse) -> Void) {
         guard let session = self.sharingSession, session.canShare else {
-            let response = INSendMessageIntentResponse(code: .failureRequiringAppLaunch, userActivity: nil)
+            let userActivity = NSUserActivity(activityType: NSStringFromClass(SendMessageIntentHandler.self))
+            let response = INSendMessageIntentResponse(code: .failureRequiringAppLaunch, userActivity: userActivity)
             completion(response)
             return
         }
@@ -128,11 +136,15 @@ public class SendMessageIntentHandler: NSObject, INSendMessageIntentHandling {
     // Handle the completed intent (required).
 
     public func handle(intent: INSendMessageIntent, completion: @escaping (INSendMessageIntentResponse) -> Void) {
-        // Implement your application logic to send a message here.
+        guard let conversation = self.resolvedConversation, let text = self.resolvedContent, let session = self.sharingSession else {
+            completion(INSendMessageIntentResponse(code: .failure, userActivity: nil))
+            return
+        }
 
-        let userActivity = NSUserActivity(activityType: NSStringFromClass(INSendMessageIntent.self))
-        let response = INSendMessageIntentResponse(code: .success, userActivity: userActivity)
-        completion(response)
+        session.enqueue {
+            conversation.appendTextMessage(text, fetchLinkPreview: false)
+            completion(INSendMessageIntentResponse(code: INSendMessageIntentResponseCode.success, userActivity: nil))
+        }
     }
 
 }
