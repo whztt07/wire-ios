@@ -346,10 +346,8 @@
 		8711A5A21E0D395A00043ACF /* CollectionCellHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8711A5A11E0D395A00043ACF /* CollectionCellHeader.swift */; };
 		8711A5A41E0D6C8800043ACF /* TwoLineTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8711A5A31E0D6C8800043ACF /* TwoLineTitleView.swift */; };
 		8712134B1FA37882008B6767 /* TrackingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8712134A1FA37881008B6767 /* TrackingManager.swift */; };
-		8714A9EC1E69E605006BBAE9 /* FLAnimatedImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8714A9EB1E69E605006BBAE9 /* FLAnimatedImage.framework */; };
 		8715F22D1F86758E006F3935 /* AnalyticsMixpanelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8715F22C1F86758E006F3935 /* AnalyticsMixpanelProvider.swift */; };
 		8715F22F1F8677A2006F3935 /* Mixpanel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8715F22E1F8677A2006F3935 /* Mixpanel.framework */; };
-		871608431E4DF7B000461934 /* HockeySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 871608411E4DF7A900461934 /* HockeySDK.framework */; };
 		87168510203332F800AC9F81 /* UIViewController+SafeArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8716850F203332F800AC9F81 /* UIViewController+SafeArea.swift */; };
 		8719FD671C88802C005FBEC0 /* Delay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8719FD661C88802C005FBEC0 /* Delay.swift */; };
 		8719FD691C888044005FBEC0 /* NSData+MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8719FD681C888044005FBEC0 /* NSData+MD5.swift */; };
@@ -515,7 +513,6 @@
 		876CC8991E966C5C00F6BABC /* IteratorProtocol+Histogram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876CC8981E966C5C00F6BABC /* IteratorProtocol+Histogram.swift */; };
 		876E0C8B1EC5ED69007EF34E /* CameraPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876E0C8A1EC5ED69007EF34E /* CameraPicker.swift */; };
 		876EECB31F5078D200E269F3 /* AccountSelectorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876EECB21F5078D200E269F3 /* AccountSelectorController.swift */; };
-		876FAEDB1C762CFC00EBA732 /* TTTAttributedLabel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 876FAEDA1C762CFC00EBA732 /* TTTAttributedLabel.framework */; };
 		8775BF1C2007C6B900A8AD93 /* SearchGroupSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8775BF1B2007C6B900A8AD93 /* SearchGroupSelector.swift */; };
 		8775BF1E2007CFB200A8AD93 /* UIControlBlockAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8775BF1D2007CFB200A8AD93 /* UIControlBlockAPI.swift */; };
 		8775BF212008CF3500A8AD93 /* ServiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8775BF202008CF3500A8AD93 /* ServiceView.swift */; };
@@ -609,7 +606,6 @@
 		87B8C3401DF9788B0015EC89 /* LinkOpener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B8C33C1DF9788B0015EC89 /* LinkOpener.swift */; };
 		87B8C3411DF9788B0015EC89 /* MapOpening.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B8C33D1DF9788B0015EC89 /* MapOpening.swift */; };
 		87B8C3421DF9788B0015EC89 /* TweetOpening.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B8C33E1DF9788B0015EC89 /* TweetOpening.swift */; };
-		87BEB0361D39018600DE9575 /* FormatterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87BEB0351D39018600DE9575 /* FormatterKit.framework */; };
 		87BEB03C1D3E44BA00DE9575 /* CameraKeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BEB03B1D3E44BA00DE9575 /* CameraKeyboardViewController.swift */; };
 		87BEB03E1D3E44DE00DE9575 /* CameraCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BEB03D1D3E44DE00DE9575 /* CameraCell.swift */; };
 		87BEB0401D3E44E600DE9575 /* AssetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BEB03F1D3E44E600DE9575 /* AssetCell.swift */; };
@@ -1701,7 +1697,6 @@
 		848DE12A1A83D20000E154B1 /* emoticons.min.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = emoticons.min.json; path = ../Sources/emoticons.min.json; sourceTree = "<group>"; };
 		8701221A20F66933001E6342 /* MessageType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageType.h; sourceTree = "<group>"; };
 		8701221B20F7923D001E6342 /* Analytics+LinearGroupCreation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Analytics+LinearGroupCreation.swift"; sourceTree = "<group>"; };
-		87023D7A1D76E4E2007B667E /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = Carthage/Build/iOS/AFNetworking.framework; sourceTree = "<group>"; };
 		870533FE1DD6162400A7F822 /* OverflowSeparatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverflowSeparatorView.swift; sourceTree = "<group>"; };
 		870534001DD6265100A7F822 /* AttributedStringOperators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttributedStringOperators.swift; sourceTree = "<group>"; };
 		87071CBF1CB68BDA0039388A /* ProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
@@ -3049,7 +3044,6 @@
 				AF36C5A71E9F6F2000FADECC /* WireCanvas.framework in Frameworks */,
 				8715F22F1F8677A2006F3935 /* Mixpanel.framework in Frameworks */,
 				87AAE4291E43682E00E1D13A /* LocalAuthentication.framework in Frameworks */,
-				8714A9EC1E69E605006BBAE9 /* FLAnimatedImage.framework in Frameworks */,
 				87D7AF671DF5A158001A1CD7 /* Contacts.framework in Frameworks */,
 				EECDB2542029D7DA00D0D268 /* Down.framework in Frameworks */,
 				872C99121DB0EA54006A3BDE /* Intents.framework in Frameworks */,
@@ -3063,10 +3057,7 @@
 				874A17482056D9FA001C6760 /* libcmark.framework in Frameworks */,
 				1EE85C671B5F96FC008E084B /* WireExtensionComponents.framework in Frameworks */,
 				5407B8C31A643CCE009090C6 /* UIKit.framework in Frameworks */,
-				876FAEDB1C762CFC00EBA732 /* TTTAttributedLabel.framework in Frameworks */,
 				54BB91E01E1FA6330039E91F /* WireShareEngine.framework in Frameworks */,
-				871608431E4DF7B000461934 /* HockeySDK.framework in Frameworks */,
-				87BEB0361D39018600DE9575 /* FormatterKit.framework in Frameworks */,
 				CEE02EAD1DDDEF3A00BA2BE2 /* avs.framework in Frameworks */,
 				878B824020A1EEEE007455CA /* HTMLString.framework in Frameworks */,
 			);
@@ -3740,7 +3731,6 @@
 				87ADCE4D1DA68FA400CC06DC /* CallKit.framework */,
 				161285DD1DD1DA85004728E9 /* WireShareEngine.framework */,
 				87775AB31D9513F9000CAD4F /* WireRequestStrategy.framework */,
-				87023D7A1D76E4E2007B667E /* AFNetworking.framework */,
 				873DC95B1D479A0500C1C9B0 /* AVFoundation.framework */,
 				874D0EB01D3E575E003DF418 /* Photos.framework */,
 				87BEB0351D39018600DE9575 /* FormatterKit.framework */,
@@ -6604,19 +6594,11 @@
 				"$(SRCROOT)/Carthage/Build/iOS/WireShareEngine.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Ziphy.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/ProtocolBuffers.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Cartography.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/TTTAttributedLabel.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/libPhoneNumberiOS.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/PINCache.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/ZipArchive.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Ono.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/OnePasswordExtension.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/FormatterKit.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/avs.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/HockeySDK.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/FLAnimatedImage.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/PureLayout.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Mixpanel.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Down.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/libcmark.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/HTMLString.framework",
@@ -6637,19 +6619,11 @@
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/WireShareEngine.framework/WireShareEngine",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Ziphy.framework/Ziphy",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/ProtocolBuffers.framework/ProtocolBuffers",
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Cartography.framework/Cartography",
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/TTTAttributedLabel.framework/TTTAttributedLabel",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/libPhoneNumberiOS.framework/libPhoneNumberiOS",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/PINCache.framework/PINCache",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/ZipArchive.framework/ZipArchive",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Ono.framework/Ono",
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/OnePasswordExtension.framework/OnePasswordExtension",
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/FormatterKit.framework/FormatterKit",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/avs.framework/avs",
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/HockeySDK.framework/HockeySDK",
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/FLAnimatedImage.framework/FLAnimatedImage",
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/PureLayout.framework/PureLayout",
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Mixpanel.framework/Mixpanel",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Down.framework/Down",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/libcmark.framework/libcmark",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/HTMLString.framework/HTMLString",
@@ -8239,7 +8213,10 @@
 				GCC_PREFIX_HEADER = "Wire-iOS/Wire-iOS-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/Wire-iOS/Wire-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS/HockeySDK.framework",
+				);
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "-Xfrontend -warn-long-function-bodies=10000 -Xfrontend -warn-long-expression-type-checking=10000";
 				PRODUCT_NAME = Wire;
@@ -8266,7 +8243,10 @@
 				GCC_PREFIX_HEADER = "Wire-iOS/Wire-iOS-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/Wire-iOS/Wire-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS/HockeySDK.framework",
+				);
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "";
 				PRODUCT_NAME = Wire;
