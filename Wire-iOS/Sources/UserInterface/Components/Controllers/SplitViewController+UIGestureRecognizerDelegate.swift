@@ -16,11 +16,24 @@
 // along with this program. If not, see http://www.gnu.org/licenses/.
 //
 
-@interface RegistrationTextField ()
+import Foundation
 
-@property (nonatomic) UIEdgeInsets placeholderInsets;
-@property (nonatomic) UIEdgeInsets textInsets;
+extension SplitViewController: UIGestureRecognizerDelegate {
 
-- (NSRange)selectedRange;
+    @objc(gestureRecognizerShouldBegin:)
+    public func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
+        if layoutSize == .regularLandscape {
+            return false
+        }
 
-@end
+        if let delegate = delegate, !delegate.splitViewControllerShouldMoveLeftViewController(self) {
+            return false
+        }
+
+        if isLeftViewControllerRevealed && !isIPadRegular() {
+            return false
+        }
+
+        return true
+    }
+}
